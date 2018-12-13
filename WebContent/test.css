@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+
+table {
+font-family: "빙그레체","맑은 고딕";
+font-size:10px;
+-webkit-overflow-scrolling: touch; !important;
+overflow-y:hidden;	}		/* added custom font-family  */
+
+table.one {									 
+margin-bottom: 3em;	
+border-collapse:collapse;	}	
+
+td {							/* removed the border from the table data rows  */
+text-align: center;     
+width: 10em;					
+padding: 1em;
+border-radius:5px !important; 		}		
+
+th {							  /* removed the border from the table heading row  */
+text-align: center;					
+padding: 1em;
+background-color: #e8503a;	     /* added a red background color to the heading cells  */
+color: white;
+border-radius:5px !important;		}			      /* added a white font color to the heading text */
+
+tr {	
+height: 1em;	}
+
+table tr:nth-child(even) {		      /* added all even rows a #eee color  */
+       background-color: #eee;		}
+
+table tr:nth-child(odd) {		     /* added all odd rows a #fff color  */
+background-color:#fff;		}
+
+.ui-select .ui-li-has-count.ui-btn-icon-right {
+	padding-right:0ex;
+}
